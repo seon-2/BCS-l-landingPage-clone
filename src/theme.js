@@ -6,7 +6,7 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        backgroundColor: "black",
+        backgroundColor: "blackAlpha.900",
         color: "white",
       },
     },
