@@ -32,12 +32,11 @@ export default function ThreeTierPricing() {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
-        <Heading as="h1" fontSize="4xl">
-          Plans that fit your need
+        <Heading as="h1" fontSize="4xl" fontFamily={"SEBANG_Gothic_Bold"}>
+          당신만의 비밀 NFT를 만들고 보관하세요
         </Heading>
         <Text fontSize="lg" color={"gray.500"}>
-          Start with 14-day free trial. No credit card needed. Cancel at
-          anytime.
+          당신의 NFT를 보유한 사람만 비밀을 알 수 있습니다.
         </Text>
       </VStack>
       <Stack
@@ -101,30 +100,28 @@ export default function ThreeTierPricing() {
             >
               <Text
                 textTransform="uppercase"
-                bg={useColorModeValue("red.300", "red.700")}
+                bg={"purple.600"}
+                fontFamily={"SEBANG_Gothic_Bold"}
                 px={3}
                 py={1}
-                color={useColorModeValue("gray.900", "gray.300")}
+                color={"white"}
                 fontSize="sm"
                 fontWeight="600"
                 rounded="xl"
               >
-                Most Popular
+                가장 인기있는
               </Text>
             </Box>
-            <Box py={4} px={12}>
+            <Box py={4} px={12} fontFamily={"SEBANG_Gothic_Bold"}>
               <Text fontWeight="500" fontSize="2xl">
-                Growth
+                프리미엄
               </Text>
               <HStack justifyContent="center">
                 <Text fontSize="3xl" fontWeight="600">
-                  $
+                  eth
                 </Text>
                 <Text fontSize="5xl" fontWeight="900">
-                  149
-                </Text>
-                <Text fontSize="3xl" color="gray.500">
-                  /month
+                  2
                 </Text>
               </HStack>
             </Box>
