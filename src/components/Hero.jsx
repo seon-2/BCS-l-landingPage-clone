@@ -27,7 +27,7 @@ export default function CallToActionWithIllustration() {
         >
           당신의{" "}
           <Text as={"span"} color={"purple.400"}>
-           
+            비
           </Text>
           밀을&nbsp;
           <Text as={"span"} color={"purple.400"}>
