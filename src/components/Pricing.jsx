@@ -10,10 +10,10 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-
 import keyImage from "@assets/key.png";
 import diaryImage from "@assets/diary.png";
 import nftImage from "@assets/nft.png";
+import { forwardRef } from "react";
 
 function PriceWrapper({ children }) {
   return (
@@ -30,7 +30,7 @@ function PriceWrapper({ children }) {
   );
 }
 
-export default function ThreeTierPricing() {
+const Pricing = forwardRef((props, ref) => {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
@@ -147,4 +147,6 @@ export default function ThreeTierPricing() {
       </Stack>
     </Box>
   );
-}
+});
+
+export default Pricing;

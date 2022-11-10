@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { IoLogoBitcoin, IoWalletSharp, IoJournalSharp } from "react-icons/io5";
 import securityImage from "@assets/security.png";
+import { forwardRef } from "react";
 
 const Feature = ({ text, icon, iconBg }) => {
   return (
@@ -30,7 +31,7 @@ const Feature = ({ text, icon, iconBg }) => {
   );
 };
 
-export default function SplitWithImage() {
+const Features = forwardRef((props, ref) => {
   return (
     <Flex
       justify={"center"}
@@ -107,4 +108,6 @@ export default function SplitWithImage() {
       </SimpleGrid>
     </Flex>
   );
-}
+});
+
+export default Features

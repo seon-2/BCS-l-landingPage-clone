@@ -18,12 +18,15 @@ import Footer from "@components/Footer";
 import ThreeTierPricing from "@components/Pricing";
 import theme from "./theme";
 import Fonts from "./Fonts";
+import { useState, useRef, useEffect } from "react";
 
 function App() {
+  const [currentVisibleIndex, setCurrentVisibleIndex] = useState(1);
+
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <NavBar />
+      <NavBar currentVisibleIndex={currentVisibleIndex} />
       <Hero />
       <Features />
       <Statistics />
